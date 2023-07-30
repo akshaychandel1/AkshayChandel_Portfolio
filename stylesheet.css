@@ -170,7 +170,7 @@ img
 }
 .skills_head{
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   display: grid;
   place-items: center;
   text-align: center;
@@ -314,33 +314,6 @@ img
   gap: 2rem;
   background: var(--bg-color);
 }
-
-.last-text p {
-  color: var(--second-color);
-  font-size: 14px;
-
-}
-
-.top i {
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 15px;
-  color: var(--text-color);
-  background: var(--main-color);
-}
-
-@media (max-width: 1480px) {
-  header {
-      padding: 12px 2.5%;
-      transition: .1s;
-  }
-
-  section {
-      padding: 110px 3% 60px;
-  }
-
-}
-
 .end 
 {
     padding: 0px 0%;
@@ -357,7 +330,7 @@ img
   }
 .contact-text
 {
-  padding: 50px;
+  padding: 0px 50px;
     /* text-align: center; */
 }
 
