@@ -1,3 +1,7 @@
+document.getElementById('hamburger').addEventListener('click', function() {
+    var menu = document.getElementById('nav-menu');
+    menu.classList.toggle('active');
+});
 // var typed = new typed(".typing",{
 // strings: ["Frontend Developer", "UI/UX Designer", "Web Developer"],
 // typespeed: 100,
