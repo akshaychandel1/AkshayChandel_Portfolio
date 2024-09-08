@@ -15,6 +15,7 @@ body {
 }
 
 /* Navbar */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -30,6 +31,17 @@ body {
 
 .navbar .left {
   font-weight: bold;
+}
+
+.navbar .right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .navbar .right ul {
@@ -53,8 +65,27 @@ body {
   border-radius: 5px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar .right ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: rgb(240, 240, 240);
+  }
+
+  .navbar .right ul.active {
+      display: flex;
+  }
+
+  .navbar .hamburger {
+      display: block;
+  }
+}
+
+
 /* Home section */
-#home-body {
+/* #home-body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +114,40 @@ body {
   transform: translateY(-5px);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 50%;
+} */
+ /* Home section */
+#home-body {
+  display: flex;
+  flex-direction: row; /* Change to row for desktop view */
+  align-items: center;
+  justify-content: space-between; /* Add this to space out items */
+  padding: 5% 10%; /* Adjust padding if needed */
+  text-align: center;
 }
+
+.home-content {
+  flex: 1; /* Allow home-content to take available space */
+  max-width: 60%; /* Adjust the width as needed */
+}
+
+.img-avatar {
+  margin-top: 0; /* Reset margin-top for alignment */
+  max-width: 300px; /* Control the size of the avatar */
+}
+
+/* Ensure .img-avatar is centered vertically and not too large */
+@media (max-width: 768px) {
+  #home-body {
+      flex-direction: column; /* Stack vertically on smaller screens */
+      padding: 20% 5%;
+  }
+
+  .img-avatar {
+      margin-top: 20px;
+      max-width: 100%; /* Full width on smaller screens */
+  }
+}
+
 
 .expert {
   margin: 20px 0;
@@ -104,6 +168,12 @@ body {
   border: 3px solid black;
   border-radius: 30px;
 }
+.resume-img {
+  width: 40px; /* Adjust width as needed */
+  height: 40px; /* Adjust height to maintain aspect ratio */
+  margin-left: 10px; /* Optional: add some spacing if needed */
+  vertical-align: middle; /* Align with text */
+}
 
 .live {
   margin: 20px;
@@ -121,6 +191,7 @@ body {
 .expand-arrow-link-1 {
   width: 20px;
 }
+
 
 /* Skills section */
 .skills_section {
